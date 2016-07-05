@@ -1,6 +1,6 @@
 {
   "name": "ng2-smoth-scroll",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A simple smoths-scroll service for Angular 2",
   "scripts": {
     "typings-install": "typings install",
