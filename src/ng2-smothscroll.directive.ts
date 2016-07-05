@@ -1,4 +1,4 @@
-import { Directive, Input } from '@angular/core';
+import { Directive, Input, HostListener } from '@angular/core';
 
 import { WINDOW } from './window.service';
 
@@ -11,11 +11,11 @@ export class DirectiveNameDirective {
 
   @Input() smothScroll: string;
 
-  constructor(private _win: WINDOW){
+  constructor(private _win: WINDOW) {
     this.win = _win.nativeWindow;
   }
 
-   public Scroll() {
+  @HostListener('click') onClick() {
     let startY = this.currentYPosition();
     let stopY = this.elmYPosition(this.smothScroll);
 
