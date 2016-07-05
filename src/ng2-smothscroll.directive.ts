@@ -5,7 +5,7 @@ import { WINDOW } from './window.service';
 @Directive({
   selector: '[smothscroll]'
 })
-export class DirectiveNameDirective {
+export class SmothScrollDirective {
   public win: Window;
   public things = new Array(200);
 
